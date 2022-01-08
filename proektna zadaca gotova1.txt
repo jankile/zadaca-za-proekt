@@ -1,0 +1,222 @@
+//testot da ima 12 prasanja koi se podeleni vo 3 grupi
+//osnovna datoteka za da gi povika site osnovni f-cii na programata
+#include <iostream>
+using namespace std;
+//int see so e vo zagradite ce se izvrsi
+int main() 
+{// float zatoa sto ima decimalni broevi, char za karakteri odnosno za odgovorite so pomala memorija 
+    float bodovi = 0;
+    char odgovor;
+    
+  {//prvite 4 prasanja treba da sodrzat po 8 bodovi da ima ponudeni 5 odgovori
+ 
+    cout<<"****************************************************"<<endl;
+    cout<<"**              TEST OD OPSTA KULTURA             **"<<endl;
+    cout<<"**    Bodovnata skala sodrzi maksimum 50 bodovi   **"<<endl;
+    cout<<"**                    SO SREJKA!                  **"<<endl;
+    cout<<"****************************************************\n"<<endl;
+    cout<<"\t<<<<Za sekoe tocno prasanje dobivate 8 bodovi>>>>\n"<<endl;
+    
+    //Prvo prasanje
+    cout<<"1. Koj e glaven grad na Makedonija? \n a) Prilep\n b) Skopje \n c) Bitola \n d) Veles \n e) Resen \n" <<endl;
+    cin>>odgovor;
+    //switch...case...break...default
+    //za test na lista koga se proveruvaat dadenite situacii dali se tocni i  se pecatat dokolku se tocni, break go zavrsuva slucajo, default e koga promenlivata nee ista so slucajot koga e nevalidna 
+    switch(odgovor)
+    {
+        
+        case 'a':
+        case 'e':
+        case 'd': 
+        case 'c': cout<<"\nVastiot odgovor e pogresen. Tocniot odgovor bese: \n b) Skopje \n"<<endl; break;
+        case 'b': cout<<"\nTocen odgovor dobivate 8 bod.\n"<<endl; bodovi+=8; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+   {  
+       //Vtoro prasanje
+ 
+    cout<<"2. Koja e najgolemata reka vo Makedonija? \n a)Crna Reka \n b) Dragor \n c) Vardar \n d) Treska \n e) Pcinja \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor)
+        {
+        
+        case 'a':
+        case 'b':
+        case 'e':
+        case 'd': cout<<"\nVastiot odgovor e pogresen. Tocniot odgovor bese: \n c) Vardar \n"<<endl; break;
+        case 'c': cout<<"\nTocen odgovor dobivate 8 bod.\n"<<endl; bodovi+=8; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+   }
+   cout<<"------------------------------------------------------------------------\n"<<endl;
+   
+    //Treto prasanje
+    cout<<"3. Kolku samoglaski ima makedonskiot jazik? \n a) 6 \n b) 2 \n c) 3 \n d) 5 \n e) 8 \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor)
+        {
+       
+        case 'b':
+        case 'c': 
+        case 'a':
+        case 'e': cout<<"\nVastiot odgovor e pogresen. Tocniot odgovor bese: \n d) 5 \n"<<endl; break;
+        case 'd': cout<< "\nTocen odgovor dobivate 8 bod.\n"<<endl; bodovi+=8; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    //Cetvrto prasanje
+    cout<<"4. Kolku bukvi ima makedonskata azbuka? \n a) 29 \n b) 30 \n c) 32 \n d) 33 \n e) 31 \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor)
+        {
+      
+        case 'b':
+        case 'c': 
+        case 'a': 
+        case 'd': cout<<"\nVastiot odgovor e pogresen. Tocniot odgovor bese: \n e) 31 \n"<<endl; break;
+        case 'e': cout<<"\nTocen odgovor dobivate 8 bod.\n"<<endl; bodovi+=8; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+  }
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    {// vtorite 4 prasanja da nosat 3 poeni so 4 ponudeni odgovori
+    //Petto prasanje
+    cout<<"\t<<<<Za sekoe tocno prasanje dobivate po 3 bodovi>>>>\n"<<endl;
+    cout<<"5. Vodata pocnuva da vrie na kolku celziusovi stepeni? \n a) 0°C \n b) 100°C \n c) 75°C \n d) 50°C \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor)
+        {
+        case 'a':
+        case 'd':
+        case 'c': cout<<"\nVastiot odgovor e pogresen. Tocniot odgovor bese: \n b) 100°C \n"<<endl; break;
+        case 'b': cout<<"\nTocen odgovor dobivate 3 bod.\n"<<endl; bodovi+=3; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    //Sesto prasanje
+    cout<<"6. Kolkav procent od povrsinata na planetata Zemja e pokriena so voda? \n a) 71% \n b) 70% \n c) 60% \n d) 55% \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor){
+        case 'd':
+        case 'b':
+        case 'c': cout<<"\nVastiot odgovor e pogresen. Tocniot odgovor bese: \n 1) 71 \n"<<endl; break;
+        case 'a': cout<<"\nTocen odgovor dobivate 3 bod.\n"<<endl; bodovi+=3; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    //Sedmo prasanje
+    cout<<"7. Koj e glaven grad na Turcija? \n a) Istanbul \n b) Izmin \n c) Antalija \n d) Ankara \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor){
+        case 'b':
+        case 'a':
+        case 'c': cout<<"\nVastiot odgovor e pogresen. Tocniot odgovor bese \n d) Ankara \n"<<endl; break;
+        case 'd': cout<<"\nTocen odgovor dobivate 3 bod.\n"<<endl; bodovi+=3; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    //Osmo prasanje
+    cout<<"8. Glaven grad na Austrija e ? \n a) Kopenhagen \n b) Berlin \n c) Vienna \n d) Salzburg \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor){
+        case 'a':
+        case 'd':
+        case 'b': cout<<"\nVastiot odgovor e pogresen. \n Tocniot odgovor bese \n c)  Vienna \n"<<endl; break;
+        case 'c': cout<<"\nTocen odgovor dobivate 3 bod.\n"<<endl; bodovi+=3; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    }
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    { //tretite 4 prasanja po 1.5 poeni so ponudeni 3 odgovori
+   cout<<"\t<<<<Za sekoe tocno prasanje dobivate  po 1.5 boda>>>>\n"<<endl;
+    //Deveto prasanje
+    cout<<"9. Hemiskata oznaka za vodorod e? \n a) He \n b) H \n c) O \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor){
+        case 'a':
+        case 'c': cout<<"\nVastiot odgovor e pogresen. \n Tocniot odgovor bese \n b) H \n"<<endl; break;
+        case 'b': cout<<"\nTocen odgovor dobivate 1.5 bod.\n"<<endl; bodovi+=1.5; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    //Deseto prasanje
+    cout<<"10. Poznatata 'EUREKA' ja rekol ? \n a) Platon \n b) Sofokle \n c) Arhimed \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor){
+        case 'a':
+        case 'b': cout<<"\nVastiot odgovor e pogresen. \n Tocniot odgovor bese \n c) Arhimed \n"<<endl; break;
+        case 'c': cout<<"\nTocen odgovor dobivate 1.5 bod.\n"<<endl; bodovi+=1.5; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    //Edinaesto prasanje
+    cout<<"11. Najgolem organ na covekovoto telo e? \n a) Kozhata \n b) Belite drobovi \n c) Crnite drobovi \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor){
+        case 'c':
+        case 'b': cout<<"\nVastiot odgovor e pogresen. \n Tocniot odgovor bese \n c) Kozhata \n"<<endl; break;
+        case 'a': cout<<"\nTocen odgovor dobivate 1.5 bod.\n"<<endl; bodovi+=1.5; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    cout<<"------------------------------------------------------------------------\n"<<endl;
+    
+    //Dvanaeseto prasanje
+    cout<<"12. Poznatata slika Mona Lisa e naslikana od? \n a) Donatelo \n b) Leonardo da Vinci \n c) Michelangelo \n"<<endl;
+    cin>>odgovor;
+    
+        switch(odgovor){
+        case 'a':
+        case 'c': cout<<"\nVasiot odgovor e pogresen. \n Tocniot odgovor bese \n b) Leonardo da Vinci \n"<<endl; break;
+        case 'b': cout<<"\nTocen odgovor dobivate 1.5 bod.\n"<<endl; bodovi+=1.5; break;
+        default: cout<<"\nOdgovorot e nevaliden.\n"<<endl;
+    };
+    }
+    cout<<"************************************************************************\n"<<endl;
+    
+    //uslov if...else ce pecati samo dokolku uslovot e ispolnet tocno , logicka operacija &&'i' 
+    cout<<"Testot go resivte so " << bodovi << " bodovi i ocena ";
+    if(bodovi <= 24)
+    {
+        cout<<"5.\n"<<endl;
+    }
+    else if(bodovi > 24 && bodovi <= 32)
+    {
+        cout<<"6.\n"<<endl;
+    }
+    else if(bodovi >= 32.5 && bodovi <= 37)
+    {
+        cout<<"7.\n"<<endl;
+    }
+    else if(bodovi >= 37.5 && bodovi <= 40.5)
+    {
+        cout<<"8.\n"<<endl;
+    }
+    else if(bodovi >= 41 && bodovi <= 45)
+    {
+        cout<<"9.\n"<<endl;
+    }
+    else if(bodovi >= 45.5 && bodovi <= 50)
+    {
+        cout<<"10.\n"<<endl;
+    }
+}
