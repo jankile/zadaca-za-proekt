@@ -1,4 +1,5 @@
-//testot da ima 12 prasanja koi se podeleni vo 3 grupi
+//Ilcho Jankuloski inki 815. br na zadaca 23. 
+//testot da ima 12 prasanja koi se podeleni vo 3 grupi, da se vnesi odgovor na 12 prasanja
 //osnovna datoteka za da gi povika site osnovni f-cii na programata
 #include <iostream>
 using namespace std;
